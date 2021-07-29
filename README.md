@@ -151,9 +151,9 @@ We have now successfully converted our application into using `Context API` 🔥
 
 **MVP Requirements**
 
-- Create a `ProductContext` and a `CartContext`
-- Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
-- Consume data using the `useContext` hook from `ProductContext` and `CartContext`
+x Create a `ProductContext` and a `CartContext`
+x Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
+x Consume data using the `useContext` hook from `ProductContext` and `CartContext`
 
 ### Task 3: Stretch Problems
 

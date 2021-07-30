@@ -21,9 +21,16 @@ function App() {
 		return setCart([...cart, item])
 	};
 
+	const removeItem = (id) => {
+		const index = cart.findIndex((x) => x.id === id);
+		const newArray = [...cart];
+		newArray.splice(index, 1);
+		setCart(newArray);
+	};
+
 	return (
 		<div className="App">
-		  <ProductContext.Provider value={{ products, addItem }}>
+		  <ProductContext.Provider value={{ products, addItem, removeItem }}>
 		   <CartContext.Provider value={[cart]}>
 			<Navigation cart={cart} />
 
